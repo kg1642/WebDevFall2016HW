@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Layout2</title>
+    <style type="text/css">
+    div,
+    header,
+    footer,
+    section,
+    article,
+    aside {
+        background-color: rgba(0, 0, 255, 0.2);
+        min-height: 100px;
+    }
+    
+    .main {
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    .col-pixels {
+        width: 300px;
+        margin: 0 10px;
+        float: left;
+    }
+    /*add a block empty content element with zero height that clears both sides to avoid our wrapping/float issues*/
+    
+    .clear-fix {
+        display: block;
+        clear: both;
+        /*to ensure some older compatability*/
+        height=0;
+        font-size: 0;
+        content: "";
+        visibility: hidden;
+    }
+
+    article.col-fluid section{
+    	/*hundred percent browser width-8*2.5%/4 */
+    	width:20%;
+    	margin:2.5%;
+    	float:left;
+    }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <header>header</header>
+        <main class=" main clear-fix">main content
+            <article class="col-pixels">Artile1</article>
+            <article class="col-pixels">Artile2</article>
+            <article class="col-pixels">Artile3</article>
+        </main>
+        <article class="col-fluid">
+            <h2>Fluid layout</h2>
+            <section>
+                <h3>Fluid Section1 </h3></section>
+            <section>
+                <h3>Fluid Section2 </h3></section>
+            <section>
+                <h3>Fluid Section3 </h3></section>
+        </article>
+        <footer>footer</footer>
+    </body>
+
+</html>
