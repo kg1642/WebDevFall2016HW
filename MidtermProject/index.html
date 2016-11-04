@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visit Nepal</title>
+    <meta name="description" content="Midterm Project: Visit Nepal">
+    <meta name="keywords" content="Midterm Project: Visit Nepal">
+    <meta name="author" content="Krishna">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- header and the nav bar items -->
+        <a href="#" class="headertitle"><h1>Visit <font color="green">Nepal</font></h1></a>
+        <ul class="nav" id="mynav">
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+            </li>
+            <li><a href="#"><strong>About Nepal</a></li>
+            </strong>
+            <li><a href="#"><strong>Contact US</a></li>
+            </strong>
+            <li><a href="#"><strong>Places to visit</a></strong>
+                <ul>
+                    <li> <a href="places/pokhara.html">Pokhara</a></li>
+                    <li> <a href="places/chitwan.html">Chitwan</a></li>
+                    <li><a href="places/kathmandu.html"> Kathmandu</a></li>
+                </ul>
+            </li>
+            <li><strong><a href="#">Things to do</a></strong>
+                <ul>
+                    <li> <a href="activities/kayaking.html">Kayaking</a></li>
+                    <li> <a href="activities/mountain-climbing.html">Mountain Climbing</a></li>
+                    <li><a href="activities/bunjee-jumping.html"> Bunjee Jumping</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+    // function that adjusts the nav bar when in smaller screen 
+    function myFunction() {
+        var x = document.getElementById("mynav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+    </script>
+    <!-- images and content used for the slides -->
+    <div class="mySlides" style="background-image:url(Images/nepalhomepage1.jpg);">
+        <p class="slide-content">NATURALLY NEPAL</p>
+    </div>
+    <div class="mySlides" style="background-image:url(Images/nepalhomepage2.jpg);">
+        <p class="slide-content">ONCE IS NOT ENOUGH</p>
+    </div>
+    <div class="mySlides" style="background-image:url(Images/nepalhomepage4.jpg);">
+        <p class="slide-content">COLORFUL CULTURES</p>
+    </div>
+    <script>
+    // the function that implements the slide functionality. Still facing problems with sizing in smaller screens. Try to use some boostraap examples 
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000); //slides changes automatically every 4 seconds 
+    }
+    </script>
+    <!-- images for the places and activities below the slides -->
+    <div>
+        <p align="center" class="heading-activities-places"><strong><font color="green">THINGS</font> TO DO</strong></p>
+        <a href="activities/kayaking.html">
+            <div class="activities-item" style="background-image:url(Images/activities/kayaking.jpg);">
+                <p class="activity-place-content">Kayaking</p>
+            </div>
+        </a>
+        <a href="activities/mountain-climbing.html">
+            <div class="activities-item" style="background-image:url(Images/activities/mountain-climbing.jpg);">
+                <p class="activity-place-content">Mountain Climbing</p>
+            </div>
+        </a>
+        <a href="activities/bunjee-jumping.html">
+            <div class="activities-item" style="background-image:url(Images/activities/bunjee-jumping.jpg);">
+                <p class="activity-place-content">Bunjee Jumping</p>
+            </div>
+        </a>
+    </div>
+    <div>
+        <p align="center" class="heading-activities-places"><strong>PLACES TO <font color="green">VISIT</font></strong></p>
+        <a href="places/kathmandu.html">
+            <div class="places-item" style="background-image:url(Images/places/kathmandu.jpg);">
+                <p class="activity-place-content">Kathmandu</p>
+            </div>
+        </a>
+        <a href="places/pokhara.html">
+            <div class="places-item" style="background-image:url(Images/places/pokhara.jpg);">
+                <p class="activity-place-content">Pokhara</p>
+            </div>
+        </a>
+        <a href="places/chitwan.html">
+            <div class="places-item" style="background-image:url(Images/places/chitwan.jpg);">
+                <p class="activity-place-content">Chitwan</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

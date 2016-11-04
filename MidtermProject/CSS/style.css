@@ -1,0 +1,395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-width: 996px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: auto;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    border: 1px solid green;
+}
+nav h1 {
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    float: right;
+}
+
+/*floating the nav bar to the right*/
+
+nav ul li {
+    width: 150px;
+    float: right;
+    display: inline-block;
+}
+
+/*change in color when hover*/
+nav ul li:hover {
+    background-color: #AAA;
+}
+
+
+/* make the anchor tags in nav display block for clickability */
+
+nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+
+
+/* hide sublists by default */
+
+nav ul ul {
+    display: none;
+    background: #DDD;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+}
+
+nav ul li:hover ul li:hover {
+    background-color: #999;
+}
+
+/*hide the icon when in bigger screen*/
+ul li.icon {
+    display: none;
+    width: 50px;
+}
+
+
+/*style for the slides and the content of the slides*/
+.myslides {
+    background-size: 100%;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    /*background-position: center center;*/
+}
+
+p.slide-content {
+    margin: 0;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    /*border: 1px solid white;*/
+    text-align: center;
+}
+
+
+/*.activities {
+    height: 300px;
+    width: 33%;
+    float: left;
+    display: inline-block;
+}
+*/
+/*style for activities-item such as bunjee jumping,...*/
+.activities-item {
+    background-size: 100%;
+    width: 33%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid white;
+    float: left;
+}
+
+.activities-item:hover > .activity-place-content {
+    display: block;
+}
+
+.activities-item:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+/*.places {
+    height: 300px;
+    width: 33%;
+    float: left;
+    display: inline-block;
+}*/
+
+.places-item {
+    background-size: 100%;
+    width: 33%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid white;
+    float: left;
+}
+
+/*hide the content by default*/
+.activity-place-content {
+    margin: 0;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    display: none;
+    text-align: center;
+}
+
+/*display the content when hovering on the image*/
+.places-item:hover > .activity-place-content {
+    display: block;
+}
+
+/*increase the size of the image when hovering*/
+.places-item:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.heading-activities-places {
+    font-size: 40px;
+    /*border:1px solid blue;*/
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/*img for the activities and the places pages*/
+.place-activity-img {
+    width: 60%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+/*content for the activities and the places pages*/
+.place-activity-content {
+    font-family: 'Bree Serif', serif;
+    margin: 0;
+    color: green;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.img-class {
+    width: 100%;
+    height: 100%;
+}
+
+.content-side-page {
+    width: 39%;
+    height: 100%;
+    float: left;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+    body {
+        min-width: 768px;
+    }
+
+/*changing the height of the slides for better height to width ratio in screens less than 995px*/
+      .myslides{
+        height:600px;
+    }
+
+    /*style for the nav when in smaller screen*/
+    nav {
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+    nav h1 {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        height: 20%;
+    }
+    ul.nav {
+        width: 100%;
+        overflow: hidden;
+    }
+    ul.nav li:not(:first-child) {
+        display: none;
+    }
+    ul.nav li.icon {
+        display: block;
+        width: 100%;
+    }
+    nav ul ul {
+        display: inline;
+        background: #DDD;
+        width: 100%;
+        float: right;
+        text-align: right;
+    }
+    ul.nav.responsive {
+        position: relative;
+        display: inline;
+        width: 100%;
+    }
+    ul.nav.responsive li.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    ul.nav.responsive li {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    ul.nav.responsive li a {
+        display: block;
+        text-align: center;
+    }
+
+/*changing height for better height to width ratio in smaller screens*/
+    .places-item{
+        height:275px;
+    }
+     .activities-item{
+        height:275px;
+    }
+
+    /*displaying the content by default in smaller screen */
+    .activity-place-content {
+        display: block;
+    }
+    .place-activity-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .content-side-page {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+       /* max-width: 767px;*/
+        margin: 0px;
+        padding: 0px;
+    }
+/*changing height for better height to width ratio in smaller screens*/
+
+       .myslides{
+        height:600px;
+    }
+
+/*style for nav in smaller screens*/
+    nav {
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+    nav h1 {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        height: 20%;
+    }
+    ul.nav {
+        width: 100%;
+        overflow: hidden;
+    }
+    ul.nav li:not(:first-child) {
+        display: none;
+    }
+    ul.nav li.icon {
+        display: block;
+        width: 100%;
+    }
+    nav ul ul {
+        display: inline;
+        background: #DDD;
+        width: 100%;
+        float: right;
+        text-align: right;
+    }
+    ul.nav.responsive {
+        position: relative;
+        display: inline;
+        width: 100%;
+    }
+    ul.nav.responsive li.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    ul.nav.responsive li {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    ul.nav.responsive li a {
+        display: block;
+        text-align: center;
+    }
+
+/*displaying the content by default in smaller screens*/
+    .activity-place-content {
+        display: block;
+    }
+
+/*displaying the places and activities image with 100% width in smaller screen*/
+     .places-item {
+        background-size: 100%;
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid white;
+    }
+    .activities-item{
+        background-size: 100%;
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: 1px solid white;
+    }
+    .place-activity-img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .content-side-page {
+        width: 100%;
+        height: auto;
+    }
+}

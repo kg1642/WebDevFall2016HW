@@ -1,0 +1,39 @@
+<html>
+<head>
+	<style>
+	.active{
+		background-color: red;
+	}
+
+	</style> 
+
+	<script type="text/javascript">
+		function alertMe(){
+			alert("Somethign");
+
+		}
+		
+		document.addEventListener("DOMContentLoaded",function (event){
+			console.log("dom content loaded");
+			var element = document.getElementById('alertbtn');
+			element.addEventListener("Click",alertMe);
+
+			//toggle class on click with another anon function 
+			document.getElementById('changeMe').addEventListener("click",function(event){
+				console.log(event.target);
+				var element = event.target;
+
+				//toggle on and off the class active with classList.toggle();
+				element.classList.toggle("active");
+
+			})
+		})
+
+
+	</script>
+</head>
+<body>
+	<p id="changeMe">Just a p</p> 
+	<button id="alertbtn">Click me</button>
+</body>
+</html>

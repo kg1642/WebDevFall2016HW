@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokhara</title>
+    <meta name="description" content="Midterm Project: Visit Nepal">
+    <meta name="keywords" content="Midterm Project: Visit Nepal">
+    <meta name="author" content="Krishna">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <!-- header and the nav bar items -->
+        <a href="../index.html" class="headertitle"><h1>Visit <font color="green">Nepal</font></h1></a>
+        <ul class="nav" id="mynav">
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+            </li>
+            <li><a href="#"><strong>About Nepal</a></li>
+            </strong>
+            <li><a href="#"><strong>Contact US</a></li>
+            </strong>
+            <li><a href="#"><strong>Places to visit</a></strong>
+                <ul>
+                    <li> <a href="pokhara.html">Pokhara</a></li>
+                    <li> <a href="chitwan.html">Chitwan</a></li>
+                    <li><a href="kathmandu.html"> Kathmandu</a></li>
+                </ul>
+            </li>
+            <li><strong><a href="#">Things to do</a></strong>
+                <ul>
+                    <li> <a href="../activities/kayaking.html">Kayaking</a></li>
+                    <li> <a href="../activities/mountain-climbing.html">Mountain Climbing</a></li>
+                    <li><a href="../activities/bunjee-jumping.html"> Bunjee Jumping</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script>
+    // function that adjusts the nav bar when in smaller screen 
+    function myFunction() {
+        var x = document.getElementById("mynav");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+    </script>
+    <!-- img and the content on the side page -->
+    <main style="width:100%; height:90%; background-color:rgb(200,200,200);">
+        <div class="place-activity-img">
+            <img src ="pokhara.jpg" class="img-class"></img>
+        </div>
+        <div class="content-side-page">
+            <p class="place-activity-content">Pokhara<br><br>The Capital city of the country, Kathmandu is also known as the city of Temples. You will find a temple, stupa or monastry almost every 100 meters. It is extremely rich in art, architecture and history.</p>
+        </div>
+    </main>
+</body>
+
+</html>
