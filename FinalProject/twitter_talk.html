@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nepal Talk</title>
+        <meta name="description" content="Final Project: Visit Nepal">
+        <meta name="keywords" content="Final Project: Visit Nepal">
+        <meta name="author" content="Krishna">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+        <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- nav bar is fixed at the top -->
+        <nav class="navbar navbar-fixed-top navbar-inverse" style="background:rgba(240,240,240,1)">
+            <div class="container-fluid ">
+                <!-- Brand name and toggle grouped here for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Visit Nepal</font></a>
+                </div>
+                <!-- Header and toggle end -->
+                <!-- Begin navigation display -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Destinations</a>
+                            <!-- This is a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button id="kathmandu" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#kathmandud">Kathmandu</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="pokhara" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#pokharad">Pokhara</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="janakpur" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#janakpurd">Janakpur</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="chitwan" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#chitwand">Chitwan</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Activities</a>
+                            <!-- This is also a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button id="rafting" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#raftingd">Rafting</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="paragliding" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#paraglidingd">Paragliding</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-climbing" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#mountain-climbingd">Mountain Climb</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-cycling" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#mountain-cyclingd">Mountain Cycling</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="twitter_talk.html">Nepal Talk</a></li>
+                        <li class="menu"><a href="knowyourBD.html">Know Your Nepali Birthday</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-md-5 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3" style="padding-top:100px;">
+            <h1 style="border:1px solid green"><center>What's Nepal Talking About?</h1>
+            <a class="twitter-timeline" href="https://twitter.com/search?q=visit%20nepal" data-widget-id="808070076033302530"></a>
+            <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+            </script>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

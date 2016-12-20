@@ -1,0 +1,406 @@
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Visit Nepal</title>
+        <meta name="description" content="Final Project: Visit Nepal">
+        <meta name="keywords" content="Final Project: Visit Nepal">
+        <meta name="author" content="Krishna">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- nav bar is fixed at the top -->
+        <nav class="navbar navbar-fixed-top navbar-inverse" style="background:rgba(240,240,240,1)">
+            <div class="container-fluid ">
+                <!-- Brand name and toggle grouped here for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Visit Nepal</font></a>
+                </div>
+                <!-- Header and toggle end -->
+                <!-- Begin navigation display -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Destinations</a>
+                            <!-- This is a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button id="kathmandu" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Kathmandu
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="pokhara" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Pokhara
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="janakpur" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Janakpur
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="chitwan" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Chitwan
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Activities</a>
+                            <!-- This is also a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button id="rafting" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Rafting
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="paragliding" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Paragliding
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-climbing" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Mountain Climbing
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-cycling" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places">Mountain Cycling</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="twitter_talk.html">Nepal Talk</a></li>
+                        <li class="menu"><a href="knowyourBD.html">Know Your Nepali Birthday</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Carosel Begin -->
+        <div id="myCarousel" class="carousel slide" style="padding:60px 0 0 0;">
+            <ol class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/nepalhomepage1.jpg" alt="NATURALLY NEPAL" style="width:100%">
+                    <div class="carousel-caption">
+                        <h1>NATURALLY NEPAL</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/nepalhomepage2.jpg" alt="ONCE IS NOT ENOUGH" style="width:100%">
+                    <div class="carousel-caption">
+                        <h1>ONCE IS NOT ENOUGH</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/nepalhomepage4.jpg" alt="COLORFUL CULTRES" style="width:100%">
+                    <div class="carousel-caption">
+                        <h1>COLORFUL CULTURES</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div>
+            <H1 align="center" class="heading-activities-places"><strong>ACTIVITIES</strong></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="margin:0 0 0 0;">
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="mountain-cyclingd">
+                    <img src="Images/activities/mountain-cycling.jpg" id="mountain-cycling-image">
+                    <p class="content-on-hover" id="mountain-cycling-content"><strong>Mountain Biking<br></strong>Many mountain bike routes lay claim to the title of the World’s Greatest, but only on our mountain biking tour in Nepal will you be surrounded by five-mile-high peaks. </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="mountain-climbingd">
+                    <img src="Images/activities/mountain-climbing1.jpg" id="mountain-climbing-image">
+                    <p class="content-on-hover" id="mountain-climbing-content"><strong>Mountain Climbing<br></strong>Put your busy life on hold for a few weeks to go peak climbing in Nepal and the myriad of majestic Himalayas. </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="paraglidingd">
+                    <img src="Images/activities/paragliding.jpg" id="paragliding-image">
+                    <p class="content-on-hover" id="paragliding-content"><strong>Paragliding<br></strong>A world of nature and freedom is waiting for you. Paragliding always an unforgettable experience, for your own pleasure or as a gift. </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="raftingd">
+                    <img src="Images/activities/rafting.jpg" id="rafting-image">
+                    <p class="content-on-hover" id="rafting-content"><strong>Rafting<br></strong>If you are looking for the best way to travel from Kathmandu to Pokhara – adventure capital of Nepal, then the Trisuli is certainly the best choice.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 align="center" class="heading-activities-places"><strong>DESTINATIONS</strong></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row" style="margin:0 0 0 0;">
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="janakpurd">
+                    <img src="Images/places/janakpur.jpg" id="janakpur-image">
+                    <p class="content-on-hover" id="janakpur-content"><strong>Janakpur<br></strong>Stroll through the ancient Mithila city to experience the Terai culture and visit the Ram Janaki Temple in the center of the city that draws allusions to the famous Hindu epic Ramayana.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="chitwand">
+                    <img src="Images/places/chitwan.jpg" id="chitwan-image">
+                    <p class="content-on-hover" id="chitwan-content"><strong>Chitwan<br></strong>Chitwan has forests, marshland and rippling grassland, and is home to sizeable wildlife populations. It’s little wonder this place is so popular amoung tourists. </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="kathmandud">
+                    <img src="Images/places/kathmandu.jpg" id="kathmandu-image">
+                    <p class="content-on-hover" id="kathmandu-content"><strong>Kathmandu<br></strong>For many, stepping off a plane into Kathmandu is a pupil-dilating experience, a riot of sights, sounds and smells that can quickly lead to sensory overload. </p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 places-activities" id="pokharad">
+                    <img src="Images/places/pokhara.jpg" id="pokhara-image">
+                    <p class="content-on-hover" id="pokhara-content"><strong>Pokhara<br></strong>Pokhara ticks all the right boxes, with spectacular scenery, adventure activities, and accommodation and food choices galore.</p>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        //jquery for scrolling to the assigned div when clicked on the button
+        $(document).ready(function() {
+
+            // mountain-climbing
+            $("#mountain-climbing").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#mountain-climbingd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#mountain-climbing-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#mountain-climbing-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#mountain-climbing-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+            $("#mountain-cycling").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#mountain-cyclingd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#mountain-cycling-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#mountain-cycling-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#mountain-cycling-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+            $("#rafting").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#raftingd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#rafting-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#rafting-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#rafting-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+            $("#paragliding").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#paraglidingd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#paragliding-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#paragliding-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#paragliding-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+            $("#kathmandu").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#kathmandud").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#kathmandu-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#kathmandu-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#kathmandu-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+
+            $("#pokhara").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#pokharad").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#pokhara-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#pokhara-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#pokhara-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+
+            $("#chitwan").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#mountain-cyclingd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#chitwan-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#chitwan-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#chitwan-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+
+
+            $("#janakpur").on('click', function() {
+                // scrolling to the assigned div 
+                $('html, body').animate({
+                    scrollTop: $("#janakpurd").offset().top
+                }, 1000);
+
+                // enlarging and displaying the content
+                $("#janakpur-image").css({
+                    "transform": "scale(1.3)",
+                    "filter": "brightness(50%)",
+                    "transition": "all 2s"
+
+                });
+                $("#janakpur-content").css({
+                    "display": "block"
+                });
+                // undoing the change after 7 seconds
+                setTimeout(
+                    function() {
+                        $("#janakpur-image").css({
+                            "transform": "scale(1)"
+                        });
+                    }, 7000);
+            });
+        });
+
+
+        //jquery for carosel 
+
+        $(document).ready(function() {
+            $("#myCarousel").carousel({
+                interval: 3000,
+                pause: "hover"
+            });
+            // PREV NEXT Buttons
+            $(".left").click(function() {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function() {
+                $("#myCarousel").carousel("next");
+            });
+
+            // Enable Carousel Indicators
+            $(".item1").click(function() {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function() {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function() {
+                $("#myCarousel").carousel(2);
+            });
+        });
+        </script>
+        <!-- http://stackoverflow.com/questions/30315401/how-to-adjust-a-greensock-js-tween-based-on-browser-scroll-y-position-rather-tha -->
+    </body>
+
+</html>

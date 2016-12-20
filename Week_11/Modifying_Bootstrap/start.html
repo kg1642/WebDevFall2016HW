@@ -129,7 +129,7 @@
     <div class="container-fluid">
         <div class="row divide green-shad">
             <div class="col-xs-12 col-md-2 col-md-offset-2">
-                <img class="img-circle" src="img/callout-1.jpg"/>
+                <img class="img-circle" src="img/callout-1.jpg" />
             </div>
             <div class="col-xs-12 col-md-5 col-md-offset-1">
                 <blockquote>
@@ -139,37 +139,37 @@
             </div>
         </div>
     </div>
-        <!-- End Carousel -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function() {
-            $("#myCarousel").carousel({
-                interval: 500,
-                pause: "hover"
-            });
-            // PREV NEXT Buttons
-            $(".left").click(function() {
-                $("#myCarousel").carousel("prev");
-            });
-            $(".right").click(function() {
-                $("#myCarousel").carousel("next");
-            });
-
-            // Enable Carousel Indicators
-            $(".item1").click(function() {
-                $("#myCarousel").carousel(0);
-            });
-            $(".item2").click(function() {
-                $("#myCarousel").carousel(1);
-            });
-            $(".item3").click(function() {
-                $("#myCarousel").carousel(2);
-            });
+    <!-- End Carousel -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#myCarousel").carousel({
+            interval: 500,
+            pause: "hover"
         });
-        </script>
+        // PREV NEXT Buttons
+        $(".left").click(function() {
+            $("#myCarousel").carousel("prev");
+        });
+        $(".right").click(function() {
+            $("#myCarousel").carousel("next");
+        });
+
+        // Enable Carousel Indicators
+        $(".item1").click(function() {
+            $("#myCarousel").carousel(0);
+        });
+        $(".item2").click(function() {
+            $("#myCarousel").carousel(1);
+        });
+        $(".item3").click(function() {
+            $("#myCarousel").carousel(2);
+        });
+    });
+    </script>
 </body>
 
 </html>

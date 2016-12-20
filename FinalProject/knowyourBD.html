@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <title>Know Your Nepali Birthday Day</title>
+    <!-- fucntion to change the English date to Nepali date -->
+    <script src="js/knowyourBD.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Bootstrap links-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <script type="text/javascript">
+    // function to load the display of the calendar. Copied from https://formden.com/blog/date-picker
+    var date;
+    $(document).ready(function() {
+        var date_input = $('input[name="date"]'); //our date input has the name "date"
+        date = date_input.value;
+        var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+        var options = {
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+            onSelect: function() {
+                $('#myFormID').submit();
+            }
+        };
+        date_input.datepicker(options);
+        $('#date-form').submit(function() {
+            return false;
+        });
+    });
+
+    // for the twitter plugin 
+    window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+    </script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+    // for fb plugin
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=516652465155874";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+     <!-- nav bar is fixed at the top -->
+        <nav class="navbar navbar-fixed-top navbar-inverse" style="background:rgba(240,240,240,1)">
+            <div class="container-fluid ">
+                <!-- Brand name and toggle grouped here for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Visit Nepal</font></a>
+                </div>
+                <!-- Header and toggle end -->
+                <!-- Begin navigation display -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Destinations</a>
+                            <!-- This is a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    
+                                    <button id="kathmandu" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#kathmandud">Kathmandu</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    
+                                    <button id="pokhara" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#pokharad">Pokhara</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="janakpur" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#janakpurd">Janakpur</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="chitwan" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#chitwand">Chitwan</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown menu"><a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-has-popup="true" aria-expanded="false">Activities</a>
+                            <!-- This is also a dropdown -->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button id="rafting" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#raftingd">Rafting</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="paragliding" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#paraglidingd">Paragliding</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-climbing" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#mountain-climbingd">Mountain Climb</a>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="mountain-cycling" data-toggle="collapse" data-target=".navbar-collapse" class="btn-activity-places"><a href="index.html#mountain-cyclingd">Mountain Cycling</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu"><a href="twitter_talk.html">Nepal Talk</a></li>
+                        <li class="menu"><a href="knowyourBD.html">Know Your Nepali Birthday</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2" style="padding-top:200px;">
+                        <label class="control-label" for="date">
+                            <h1><center>Know Your Nepali Birthday <button type="button" title="Click to Know about Nepali Calendar" class="btn btn-default btn-lg" data-toggle="modal" data-target="#basicModal" >?</button> </h1></label></center>
+                        <br>
+                        <br>
+                        <!-- Form code begins -->
+                        <form method="post" id="date-form">
+                            <div class="form-group">
+                                <!-- Date input -->
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <!-- Submit button -->
+                                <button class="btn btn-primary " name="submit" type="submit" onClick="ADtoBS()">Submit</button>
+                            </div>
+                        </form>
+                        <p id="display"></p>
+                        <!-- Form code ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content for ? here -->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labeledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true"> &times; </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nepali calendar, also known as Bikram Samvat(BS), is a Hindu calendar used in Nepal and a handful of Indian States. In Nepal, it has been adopted as the official calendar. It is a lunisideral and uses lunar months and sidereal years for timekeeping. Like Gregorian calendar, it has 12 months but the number of days in a month vary from year to year.
+                            <br>Choose your birthdate below and click submit to find out your Nepali birthdate.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            OK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Display after the submit button is clicked -->
+        <p id="display"></p>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
